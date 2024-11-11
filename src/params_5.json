@@ -1,0 +1,141 @@
+{
+    "analysis_period_years": 20,
+    "assets": [
+        {
+            "name": "Savings",
+            "type": "cash",
+            "id": 21,
+            "initial_value": 40000
+        },
+        {
+            "name": "House",
+            "type": "property",
+            "id": 1,
+            "cost": 850000,
+            "appreciation_rate": 0.03
+        },
+        {
+            "name": "Kitchen Remodel",
+            "type": "renovation",
+            "id": 2,
+            "cost": 20000,
+            "value_add_percentage": 0.75,
+            "depreciation_rate": 0.05,
+            "parent_asset_id": 1
+        },
+        {
+            "name": "Bathroom Upgrade",
+            "id": 3,
+            "type": "renovation",
+            "cost": 10000,
+            "value_add_percentage": 0.6,
+            "depreciation_rate": 0.05,
+            "parent_asset_id": 1
+        },
+        {
+            "name": "Insulation Upgrade",
+            "id": 4,
+            "type": "renovation",
+            "cost": 40000,
+            "value_add_percentage": 0.9,
+            "depreciation_rate": 0.05,
+            "parent_asset_id": 1
+        },
+        {
+            "name": "Heating Upgrade",
+            "id": 5,
+            "type": "renovation",
+            "cost": 30000,
+            "value_add_percentage": 0.75,
+            "depreciation_rate": 0.05,
+            "parent_asset_id": 1
+        },
+        {
+            "name": "Windows Upgrade",
+            "id": 6,
+            "type": "renovation",
+            "cost": 10000,
+            "value_add_percentage": 0.75,
+            "depreciation_rate": 0.05,
+            "parent_asset_id": 1
+        },
+        {
+            "name": "Floor Upgrade",
+            "id": 7,
+            "type": "renovation",
+            "cost": 20000,
+            "value_add_percentage": 0.75,
+            "depreciation_rate": 0.05,
+            "parent_asset_id": 1
+        }
+    ],
+    "liabilities": [
+        {
+            "name": "Mortgage",
+            "type": "mortgage",
+            "id": 8,
+            "interest_rate": 0.035,
+            "term_years": 30,
+            "principal": 618000,
+            "related_asset_id": 1
+        }
+    ],
+    "incomes": [
+        {
+            "name": "Salary",
+            "id": 9,
+            "amount_per_period": 133200,
+            "growth_rate": 0.03
+        }
+    ],
+    "expenses": [
+        {
+            "name": "Groceries",
+            "id": 11,
+            "amount_per_period": 12000,
+            "growth_rate": 0.03
+        },
+        {
+            "name": "Energy",
+            "id": 12,
+            "amount_per_period": 5000,
+            "growth_rate": 0.03
+        },
+        {
+            "name": "Transportation",
+            "id": 13,
+            "amount_per_period": 2400,
+            "growth_rate": 0.03
+        },
+        {
+            "name": "Entertainment",
+            "id": 14,
+            "amount_per_period": 6000,
+            "growth_rate": 0.03
+        },
+        {
+            "name": "Insurance",
+            "id": 15,
+            "amount_per_period": 1000,
+            "growth_rate": 0.03
+        },
+        {
+            "name": "Miscellaneous",
+            "id": 16,
+            "amount_per_period": 1800,
+            "growth_rate": 0.03
+        },
+        {
+            "name": "Maintenance Costs",
+            "id": 17,
+            "amount_per_period": 5000,
+            "growth_rate": 0.02
+        },
+        {
+            "name": "Property Taxes",
+            "id": 20,
+            "amount_per_period": 2500,
+            "growth_rate": 0.02
+        }
+    ]
+}
